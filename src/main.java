@@ -23,7 +23,5 @@ public class main {
 		    System.err.println("An error occurred while writing the output file: " + e.getMessage());
 		}
 	}
-		
-
-
+	
 }

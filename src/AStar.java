@@ -5,7 +5,7 @@ import java.util.*;
 
 public class AStar {
     private PriorityQueue<Node> open;	// The set of tentative nodes to be evaluated
-    private Set<Node> closed;			// The set of nodes already evaluated
+    private Set<Node> closed;		// The set of nodes already evaluated
     private Map<Node, Node> parents;	// The map of navigated nodes
     private Map<Node, Integer> gCost;	// Cost from start along best known path
     private Map<Node, Integer> fScore;	// Estimated total cost from start to nearest goal through y

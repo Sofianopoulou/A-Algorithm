@@ -5,7 +5,6 @@ import java.io.IOException;
 public class main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		try {
 			File outputFile = new File("output.txt");
 			FileWriter writer = new FileWriter(outputFile);

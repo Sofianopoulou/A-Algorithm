@@ -31,11 +31,10 @@ public class AStar {
             Node current = open.poll();	// Retrieves the head of the queue and also removes it 
             if (current.equals(goal)) {
             	try {
-					writer.write("Path found! Here is the maze with obstacles, initial, goal states and optimal path:\n");
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+		 writer.write("Path found! Here is the maze with obstacles, initial, goal states and optimal path:\n");
+		} catch (IOException e) {
+		 e.printStackTrace();
+		}
                 return reconstructPath(current, maze);
             }
             closed.add(current);
@@ -56,10 +55,9 @@ public class AStar {
             System.out.println("Closed size: " + closed.size());
         }
 	    try {
-			writer.write("Error: Could not find a path from start to goal. Here is the maze with obstacles, initial and goal states:\n ");
+		writer.write("Error: Could not find a path from start to goal. Here is the maze with obstacles, initial and goal states:\n ");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		e.printStackTrace();
 		}
         return null; // No path found
     }
